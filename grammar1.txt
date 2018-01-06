@@ -1,0 +1,5 @@
+S -> NP VP
+NP -> n | pro
+VP -> vi | vt NP
+
+# python earley.py grammar1.txt "I<n> eat<vt> rice<n>" --debug

@@ -1,0 +1,9 @@
+S -> NP VP | NP VP PREPS
+NP -> d NP3
+NP3 -> a NP3 | n | n PREPS
+PREPS -> pre NP2 | pre NP PREPS
+NP2 -> d NP3
+VP -> v
+
+# python earley.py grammar2.txt "The<d> young<a> student<n> sat<v> in<pre> the<d> class<n>" --debug
+# python earley.py grammar2.txt "An<d> old<a> man<n> sat<v> on<pre> the<d> new<a> chair<n> in<pre> the<d> house<n>" --debug
